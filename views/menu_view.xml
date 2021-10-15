@@ -1,0 +1,13 @@
+<odoo>
+
+    <!-- Actions of the main menu -->
+    <record id="action_view_adalberto" model="ir.actions.act_window">
+        <field name="name">Reports</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form,pivot</field>
+    </record>
+
+    <!-- Menu item -->
+    <menuitem id="menu_adalberto" parent="" action="adalberto_odoo_development_module.action_view_adalberto"/>
+
+</odoo>

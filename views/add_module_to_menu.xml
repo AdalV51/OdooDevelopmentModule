@@ -1,0 +1,14 @@
+<odoo>
+
+    <!-- This file goal is to make visible this module in the menu to the users that belong to "base.group_system" -->
+    <record id="model_access_adalberto" model="ir.model.access">
+        <field name="name">model.access.adalberto</field>
+        <field name="model_id" ref="adalberto_odoo_development_module.model_res_partner"/>
+        <field name="group_id" ref="base.group_system"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+
+</odoo>

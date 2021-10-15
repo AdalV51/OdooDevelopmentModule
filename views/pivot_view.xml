@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!-- Created Pivot view -->
+    <record id="adalberto_pivot" model="ir.ui.view">
+        <field name="name">res.partner.pivot.table</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+
+            <!-- Adding pivot view with name and genre -->
+            <pivot string="Genre Pivot Table">
+                <field name="display_name" type="row"/>
+                <field name="genre_field" type="col"/>
+            </pivot>
+
+        </field>
+    </record>
+    
+</odoo>

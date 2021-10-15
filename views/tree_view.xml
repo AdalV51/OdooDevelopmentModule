@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+        <!-- Inherited tree view from res.partner -->
+    <record id="view_partner_tree" model="ir.ui.view">
+        <field name="name">res.partner.view.tree.adalberto</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+
+            <!-- Adding the field genre after the email -->
+            <field name="email" position="after">
+                    <field name="genre_field"/>
+            </field>
+
+        </field>
+    </record>
+
+</odoo>
